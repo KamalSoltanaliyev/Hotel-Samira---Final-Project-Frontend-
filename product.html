@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/product.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- swiper js cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header area -->
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i>Hotel Samira</a>
+
+      <form class="search" role="search">
+        <input type="search" name="search" placeholder="Search" />
+        <i class="bx bx-search" aria-hidden="true"></i>
+      </form>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="review.html">Review</a>
+        <a href="faq.html">FAQ</a>
+        <a href="book.html" class="btn">Book Now</a>
+      </nav>
+    </header>
+
+    <!-- end header area -->
+
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- card left -->
+        <div class="product-imgs">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img src="assets/images/room-1.jpg" alt="shoe image" />
+              <img src="assets/images/room-2.jpg" alt="shoe image" />
+              <img src="assets/images/room-3.jpg" alt="shoe image" />
+              <img src="assets/images/room-4.jpg" alt="shoe image" />
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="assets/images/room-1.jpg" alt="shoe image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="assets/images/room-6.jpg" alt="shoe image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="assets/images/room-6.jpg" alt="shoe image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="assets/images/room-1.jpg" alt="shoe image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class="product-content">
+          <h2 class="product-title">Room</h2>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class="product-price">
+            <p class="new-price">Price: <span>$249.00/night</span></p>
+          </div>
+
+          <div class="product-detail">
+            <h2>About This room:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              eveniet veniam tempora fuga tenetur placeat sapiente architecto
+              illum soluta consequuntur, aspernatur quidem at sequi ipsa!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
+            </p>
+            <ul>
+              <li>Room Type: <span>For Couples</span></li>
+              <li>Rooms: <span>2</span></li>
+              <li>Adults: <span>2</span></li>
+              <li>Children: <span>0</span></li>
+              <li>Floor: <span>15/20</span></li>
+              <li>Number of Beds: <span>1</span></li>
+              <li>Bed Size: <span>Large</span></li>
+              <li>Area: <span>100 kvm</span></li>
+              <li>Check In: <span>05.07.2024</span></li>
+              <li>Check Out: <span>25.07.2024</span></li>
+            </ul>
+          </div>
+
+          <div class="purchase-info">
+            <button type="button" class="btn">
+              Add to Cart <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button type="button" class="btn" id="reserveButton">
+              Reserve
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- comments section -->
+    <section class="comments">
+      <h2 class="comments-heading">Comments</h2>
+      <div class="comment-form">
+        <div class="rating">
+          <input type="radio" name="rating" id="rating-5" value="5" />
+          <label for="rating-5" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-4" value="4" />
+          <label for="rating-4" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-3" value="3" />
+          <label for="rating-3" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-2" value="2" />
+          <label for="rating-2" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-1" value="1" />
+          <label for="rating-1" class="fas fa-star"></label>
+        </div>
+        <textarea
+          id="comment-text"
+          placeholder="Write your comment here..."
+          rows="5"
+        ></textarea>
+        <button type="button" class="btn" id="submit-comment">
+          Submit Comment
+        </button>
+      </div>
+      <div class="comment-list" id="comment-list">
+        <div class="comment-item">
+          <h1 class="comment-author">John Doe</h1>
+          <div class="comment-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="client-comment">
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <h3 class="comment-author">Jane Smith</h3>
+          <div class="comment-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="comment-text">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Etiam sit amet orci eget eros faucibus
+            tincidunt.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end comments section -->
+
+    <!-- room -->
+
+    <section class="room" id="room">
+      <h1 class="heading">Other Rooms</h1>
+
+      <div class="swiper room-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-1.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-2.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-3.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-4.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-5.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="price">$15.99/night</span>
+              <img src="assets/images/room-6.jpg" alt="" />
+              <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="content">
+              <h3>exclusive room</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente nisi.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- end -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-852-4565 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +123-852-4565</a>
+          <a href="#"> <i class="fas fa-envelope"></i> kamalas@code.edu.az</a>
+          <a href="#"> <i class="fas fa-map"></i> Baku, Azerbaijan</a>
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="index.html"> <i class="fas fa-arrow-right"></i> Home</a>
+          <a href="about.html"> <i class="fas fa-arrow-right"></i> About</a>
+          <a href="rooms.html"> <i class="fas fa-arrow-right"></i> Rooms</a>
+          <a href="gallery.html"> <i class="fas fa-arrow-right"></i> Gallery</a>
+          <a href="review.html"> <i class="fas fa-arrow-right"></i> Review</a>
+          <a href="faq.html"> <i class="fas fa-arrow-right"></i> FAQ</a>
+          <a href="book.html"> <i class="fas fa-arrow-right"></i> Book Now</a>
+        </div>
+
+        <div class="box">
+          <h3>Links for Users</h3>
+          <a href="login.html"> <i class="fas fa-arrow-right"></i> Log In</a>
+          <a href="register.html">
+            <i class="fas fa-arrow-right"></i> Register</a
+          >
+          <a href="user.html">
+            <i class="fas fa-arrow-right"></i> User Profile</a
+          >
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="credit">
+        &copy; Copyright 2024 by <span>Kamal Soltanaliyev</span>
+      </div>
+    </section>
+
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
